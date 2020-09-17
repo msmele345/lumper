@@ -1,0 +1,20 @@
+spring:
+  kafka:
+    consumer:
+      group-id: trades
+    bootstrap-servers: localhost:9092
+
+  datasource:
+    url: jdbc:sqlserver://localhost;
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: sa
+    password: Weonlyusesqltogether2020
+
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
+      ddl-auto: update
+    show-sql: true
+
+kafka:
+  bootstrapAddress: localhost:9092
